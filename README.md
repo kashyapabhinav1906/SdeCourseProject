@@ -1,7 +1,7 @@
 A Cross-Market Recommendation System
 This repository provides the implementation of CIKM 2021 paper titled as "[Cross-Market Product Recommendation](https://arxiv.org/pdf/2109.05929.pdf)".
 
-The general schema of our FOREC recommendation system is shown below. For a pair of markets, the middle part shows the market-agnostic model that we pre-train, and then fork and fine-tune for each market shown in the left and right. Note that FOREC is capable of working with any desired number of target markets. However, for simplicity, we only experiment with pairs of markets for the experiments. For further details, please refer to our paper. 
+The general schema of FOREC recommendation system is shown below. For a pair of markets, the middle part shows the market-agnostic model that we pre-train, and then fork and fine-tune for each market shown in the left and right. Note that FOREC is capable of working with any desired number of target markets. However, for simplicity, we only experiment with pairs of markets for the experiments. 
 
 
 
@@ -16,7 +16,7 @@ We use conda with pycharm for our experimentations. Please refer to the `require
 - [pytrec_eval](https://github.com/cvangysel/pytrec_eval)
 
 ## DATA
-The `DATA` folder in this repository contains the cleaned and proccessed data that we use for our experiments. Please note that we made a few changes with releasing the data, and you might see slightly different numbers compared to the reported numbers in the paper. 
+The `DATA` folder in this repository contains the cleaned and proccessed data that we use for our experiments. 
 
 If you wish to repeat the process on other categories of data or change the data preprocessing steps, `prepare_data.ipynb` provides the code for downloading and preprocessing data. Please refer to that jupyter notebook for further details. Don't hesitate to contact us in case of any problem. 
 
